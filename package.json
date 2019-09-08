@@ -1,0 +1,18 @@
+{
+  "name": "mediate",
+  "version": "0.0.1",
+  "description": "The new, new media query syntax.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "styled-components",
+    "CSS",
+    "media",
+    "query",
+    "breakpoints"
+  ],
+  "author": "",
+  "license": "ISC"
+}
