@@ -1,4 +1,6 @@
-const mediate = queryFunc => (strings, ...raw) => ({ theme: { breakpoints, media }, ...props }) => {
+Object.defineProperty(exports, '__esModule', { value: true })
+
+exports.default = queryFunc => (strings, ...raw) => ({ theme: { breakpoints, media }, ...props }) => {
   const values = Object.keys(raw).map(k => (typeof raw[k] === 'function' ? raw[k](props) : raw[k]))
   const sizes = values.reduce((acc, value) => {
     if (typeof value === 'string') return acc[0] === 0 ? acc : { ...acc, 0: 0 }
@@ -29,5 +31,3 @@ const mediate = queryFunc => (strings, ...raw) => ({ theme: { breakpoints, media
       return Number(key) === 0 ? cssString : `@media ${queryFunc(sizes[key], media)} {${cssString}}`
     })
 }
-
-export default mediate

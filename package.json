@@ -1,7 +1,7 @@
 {
-  "name": "mediate",
-  "version": "0.0.1",
-  "description": "The new, new media query syntax.",
+  "name": "styled-mediate",
+  "version": "0.0.11",
+  "description": "Write dryer media queries in your styled-components.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,11 @@
     "CSS",
     "media",
     "query",
-    "breakpoints"
+    "breakpoints",
+    "css-in-js",
+    "react",
+    "styling"
   ],
-  "author": "",
-  "license": "ISC"
+  "author": "Paul Petrocco",
+  "license": "MIT"
 }
